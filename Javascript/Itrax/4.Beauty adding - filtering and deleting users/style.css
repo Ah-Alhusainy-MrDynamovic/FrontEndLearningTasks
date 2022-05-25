@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+main{
+    background-color: aquamarine;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.to-do-container{
+    background-color: white;
+    padding: 30px;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow: 2px 4px 5px rgb(0 0 0 / 30%);
+}
+
+.to-do-container #msg{
+    background-color: rgb(255 0 0 / 30%);
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    display: none;
+}
+
+.to-do-container form{
+    display: flex;
+    flex-direction: column;
+}
+
+.to-do-container form input{
+    margin-bottom: 20px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 20px;
+}
+
+.to-do-container form #btn{
+    align-self: center;
+    padding: 10px 25px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#to-do-list li {
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    background: rgb(128 128 128 / 20%);
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#to-do-list li span{
+    color: red;
+}
+
+#to-do-list li button{
+    border: none;
+    cursor: pointer;
+    background: black;
+    color: red;
+    padding: 10px 20px;
+    border-radius: 8px;
+}

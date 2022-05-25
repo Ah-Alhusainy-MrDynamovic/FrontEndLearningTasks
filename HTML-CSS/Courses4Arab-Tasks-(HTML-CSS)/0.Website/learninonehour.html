@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <h1 class="test" dir="rtl" title="This my name"> احمد طارق الحسيني</h1>
+        <!-- المقدمة -->
+        <article>
+            <h2>أهم لغات برمجة المواقع</h2>
+            <p>
+                يوجد العديد من لغات برمجة المواقع ولكن اهمهم
+                <br /> html لغة
+                <br /> css لغة
+            </p>
+
+        </article>
+
+        <hr />
+        <article>
+            <!-- المقال الاول -->
+            <h2 dir="rtl" lang="ar">html لغة</h2>
+            <p>.... هى ليست لغة برمجة وهى اختصار ل</p>
+            <hr />
+            <!-- المقال الثانى -->
+            <h2>css لغة</h2>
+            <p>وهى ليست لغة برمجة ولكن هى المسؤلة عن شكل العنصر</p>
+        </article>
+        <article>
+            <address>
+                Written by ali hassan <br>
+                Visit us at: courses4arab.com <br>
+                Cairo <br>
+                Egypt
+            </address>
+            <p> على : 90 % </p>
+            <p> 90% : علي </p>
+            <p> <bdi> علي </bdi> : 90% </p>
+            <p> علي : %90</p>
+            <p> <bdo dir="rtl"> ila</bdo></p>
+            <blockquote cite="https://www.w3.org/TR/html52/introduction.html#introduction-history">
+                With the creation of the W3C, HTML’s development changed venue again. A first abortive attempt at
+                extending HTML in 1995 known as HTML 3.0 then made way to a more pragmatic approach known as HTML 3.2,
+                which was completed in 1997. HTML 4.01 quickly followed
+                later that same year.
+            </blockquote>
+            <p>
+                <cite>Rich Dad Poor Dad </cite> is a 1997 book written by Robert Kiyosaki and Sharon Lechter.
+            </p>
+        </article>
+        <article>
+            <code>
+                <p>
+                    <cite>Rich Dad Poor Dad </cite> is a 1997 book written by Robert Kiyosaki and Sharon
+                    Lechter.
+                </p>
+            </code>
+            <pre>
+<div>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>  ><        &gl;
+<pre>
+  <code>
+  if b > a:
+                print("b is greater than a")
+  else:
+                print("a is greater than b")
+  </code>
+</pre>
+
+            </pre>
+        </article>
+        <p>
+            Most applications let you press <kbd>Ctrl+S</kbd> to save the current document
+        </p>
+        <p>
+            ctrl+s
+        </p>
+        <p>
+            The <samp> press F1 to continue </samp> <br>
+            The <code> press F1 to continue </code> <br>
+
+            error is commonly caused by a device being added to the server
+            and not enabled
+
+        </p>
+        <p>
+            <meter min="0" max="10" value="5"> </meter> <br>
+            <progress value="30" max="100"> 30</progress>
+
+        </p>
+        <p>
+            my car's color is <s> white</s> gray
+        </p>
+        <template>
+            <h1>heading</h1>
+            <p>content ... </p>
+        </template>
+        <p>
+            <time datetime="1990-07-25 22:00"> يوم عيد ميلادى </time>
+            ياتى فى نفس المعاد كل عام ههخه
+        </p>
+        <h1>find X </h1>
+        <p>
+            <var>X</var> = <var>y</var> + 2 <br>
+            <var>y</var> = 2<var>X</var> + 4
+        </p>
+        <p>To learn AJAX, you must be familiar with the XML<wbr>Http<wbr>Request Object.</p>
+            <p>To learn AJAX, you must be familiar with the XMLHttpRequest Object.</p>
+            <p>
+                <dfn>Django </dfn> is a Python-based free and open-source web framework.
+            </p>
+            <!-- <form action="/example.php" method="post"> -->
+            <!-- <fieldset>
+        <legend> sign in form : </legend>
+
+        <label for="pass">Password here : </label>
+        <input id="pass" type="password">
+        <br>
+        <label for="em">E-mail here : </label>
+        <input id="em" type="email">
+        <br>
+        <input type="submit">
+
+    </fieldset> -->
+            <form action="/example.php" method="post">
+                <!-- <fieldset>
+            <legend> sign in form : </legend>
+
+            <label for="pass">Password here : </label>
+            <input id="pass" type="password">
+            <br>
+            <label for="em">E-mail here : </label>
+            <input id="em" type="email">
+            <br>
+            <input type="submit">
+
+        </fieldset> -->
+                <!-- <form>
+            <label for="browsers">Choose your best browser : </label>
+
+            <select id="browsers">
+                <option value="Chrome"> Chrome </option>
+                <option value="Firefox"> Firefox </option>
+                <option value="Opera"> Opera </option>
+            </select>
+        </form> -->
+                <form action="/example.php" method="post">
+                    <label for="box">Choose your best browser : </label>
+
+                    <input list="browsers" />
+
+                    <datalist id="browsers">
+                        <option value="Chrome"> </option>
+                        <option value="Firefox"> </option>
+                        <option value="Opera"> </option>
+                    </datalist>
+
+                    <input type="submit" />
+                </form>
+                <label for="Frameworks">Choose your favorite Framework</label>
+
+                <select id="Frameworks">
+
+                    <optgroup label="front-end framework">
+                        <option value="React">React</option>
+                        <option value="Angular">Angular</option>
+                        <option value="Vue">Vue</option>
+                    </optgroup>
+
+                    <optgroup label="Back-end">
+                        <option value="Laravel">Laravel</option>
+                        <option value="Django">Django</option>
+                        <option value="Flask">Flask</option>
+                    </optgroup>
+
+                </select>
+                <!-- </form> -->
+            </form>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+                <!-- <img src="../1.CV/s.jpg" alt="sss"> -->
+                <!-- <img src="../1.CV/s.jpg" alt="sss"> -->
+
+            </a>
+
+            <dl>
+                <dt>hhhh</dt>
+                <dl>kjkjkjkjkjkj</dl>
+                <dt>ijiji</dt>
+                <dl>uuuuuuuuuuuuuuuu</dl>
+            </dl>
+            <dl>
+                <dt>HTML</dt>
+                <dl> Hypter Lorem, ipsum.</dl>
+                <dt>CSS</dt>
+                <dl> Lorem, ipsum dolor. Lorem, ipsum.</dl>
+            </dl>
+            <dl>
+                <dt>HTML</dt>
+                <dl> Hypter Lorem, ipsum.</dl>
+            </dl>
+            <details open>
+                <!-- OR <details open> -->
+                <summary>Why learn with us</summary>
+                <ol>
+                    <li>Job-focused content</li>
+                    <li>Learn by building real-world projects</li>
+                    <li>Start every course from scratch</li>
+                </ol>
+            </details>
+            <!-- <dialog open>This is an open dialog window</dialog> -->
+            <dialog>This is an open dialog window</dialog>
+            <ul>
+                <li> <data value="100"> item 1 </data> </li>
+                <li> <data value="101"> item 2 </data> </li>
+                <li> <data value="102"> item 3 </data> </li>
+            </ul>
+
+            <!-- <iframe width="700" height="500" src="https://www.courses4arab.com">
+            </iframe> -->
+            <iframe name="courses" width="500" height="200" src=""></iframe>
+
+            <a href="https://www.courses4arab.com" target="courses">courses4arab.com</a>
+            <a href="https://courses4arab.com/html/introduction-to-html" target="courses">intro to html</a>
+            <picture>
+                <source media="(max-width: 500px)" srcset="../1.CV/s.jpg">
+                <!-- <source media="(min-width:501px; max-width: 700px)" srcset="../4. Engage Template/images/engage.jpg> -->
+            </picture>
+            <!-- <img src=" ../4. Engage Template/images/1.jpg" alt="" srcset=""> <br> -->
+
+            <iframe src="" name="hasona" width="500" height="250"></iframe>
+            <!-- <img id="hs" src="../4. Engage Template/images/3.jpg"   alt=""> -->
+            <a href="#hs" target="hasona"> Click Here </a>
+
+            <blockquote>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <footer>
+                    Lorem, ipsum. <cite> This AHmed <a href="#"> <em>Alhusainy</em></a></cite> <br>
+                    Lorem, ipsum. <cite> This AHmed <a href="#">Alhusainy</a></cite>
+                </footer>
+            </blockquote>
+            <abbr title="Hypertext Markup Lanagauage"> HTML  </abbr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+
+</html>

@@ -1,0 +1,155 @@
+/* =======General======= */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    font-size: 14px;
+}
+
+body {
+    background: rgb(47, 132, 218);
+}
+
+
+/* ============== Container ============= */
+
+.container {
+    position: relative;
+    width: 100%;
+    margin: 6rem auto;
+    background: #ecf0f1;
+    border-radius: 0.8rem;
+    max-width: 70rem;
+    height: 38rem;
+}
+
+.form-container {
+    position: absolute;
+    z-index: 1;
+    top: -20px;
+    bottom: -20px;
+    padding-top: 30px;
+    overflow: hidden;
+    transition: .8s;
+    background: #fff;
+    width: 50%;
+    box-shadow: 0 0 60px -10px rgba(19, 207, 164, 0.57);
+    border: 5px solid rgb(7, 74, 122);
+}
+
+
+/* =======SignUp/Login Area===== */
+
+.signup,
+.login {
+    position: relative;
+    /* float: left; */
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 100%;
+}
+
+.signup .btn,
+.login .btn {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    width: 150px;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    letter-spacing: .7px;
+    text-align: center;
+    z-index: 2;
+    cursor: pointer;
+    padding: 13px 25px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.btn-primary {
+    background: #009e5b;
+}
+
+.btn-secondary {
+    background: #0f6fb9;
+}
+
+.btn:hover {
+    opacity: 0.85;
+}
+
+.pos1 {
+    bottom: 6rem;
+    right: 12rem;
+}
+
+.pos2 {
+    right: -24rem;
+    top: -8rem;
+}
+
+input {
+    width: 75%;
+    border: none;
+    display: block;
+    margin: 1.5rem auto;
+    padding: 0.5rem 0.25rem;
+    border-bottom: 1.5px solid #878b8c;
+    transition: .7s;
+}
+
+input::placeholder {
+    color: rgba(15, 89, 194, 0.98);
+    font-size: 1rem;
+}
+
+input:focus {
+    border-top: transparent;
+    transition: 200ms;
+    outline-style: none;
+    /* box-shadow: 0 1px 0 #bdc3c7; */
+    box-shadow: 1px 3px 6px #bdc3c7;
+}
+
+input[type="radio"] {
+    display: none;
+    z-index: 20;
+    top: 0;
+    left: 0;
+}
+
+.log-container {
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 10rem;
+    display: none;
+}
+
+
+/* ====== */
+
+.user-table {
+    display: none;
+    margin: auto;
+    margin: auto;
+    text-align: center;
+    width: 80%;
+}
+
+.user-table,
+th,
+td {
+    border: 1px solid blue;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    width: 10rem;
+}

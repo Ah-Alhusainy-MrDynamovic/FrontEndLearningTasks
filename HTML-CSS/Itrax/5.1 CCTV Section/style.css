@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+}
+/* =================================================== */
+.industries {
+    padding: 4rem 0;
+    /* overflow: scroll; */
+    /* ! Please take care of this , this the soln that i have sent to you  */
+}
+
+.industries .title {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+.industries .perent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 1.875rem;
+}
+
+.industries .perent .child {
+    box-shadow: 0px 5px 20px 0px #00000014;
+    padding: 1.563rem;
+    background: #fff;
+    display: flex;
+    column-gap: 1.5rem;
+}
+.industries .perent .child .img-child {
+    flex: 1;
+}
+.industries .perent .child .content {
+    flex: 1;
+}
+.industries .perent .child .content h3 {
+    color: #000000;
+    font-size: 1.563rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.industries .perent .child .content p {
+    color: #333;
+    width: 95%;
+    line-height: 1.6;
+    text-align: center;
+}
+.industries .perent .child .content .btn {
+    margin-top: 1.875rem;
+    position: relative;
+}
+.industries .perent .child .content .btn a:nth-child(1) {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #7dbc26;
+    display: inline-block;
+    border-radius: 50%;
+    line-height: 2.5rem;
+    text-align: center;
+    color: #fff;
+    transition: all .3s ease-in;
+}
+.industries .perent .child:hover .content .btn a:nth-child(1) {
+    transform: scale(0);
+}
+
+.industries .perent .child .content .btn a:nth-child(2) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #7dbc26;
+    width: 100%;
+    padding: 0.7rem 0.3rem;
+    border-radius: 0 30px 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all .3s ease-in;
+    transform-origin: left;
+}
+.industries .perent .child:hover .content .btn a:nth-child(2) {
+    opacity: 1;
+    visibility: visible;
+    transform: scaleX(1);
+}
+.industries .perent .child .content .btn a:nth-child(2) i {
+    background-color: #fff;
+    color: #000;
+    padding: .4rem;
+    border-radius: 50%;
+}
+
+@media (max-width:991px) {
+    .industries .perent .child {
+        flex-direction: column;
+    }
+
+    .container {
+        width: 65%;
+    }
+
+    .industries .title {
+        width: 80%;
+    }
+
+    .industries .perent {
+        grid-template-columns: repeat(1, 100%);
+    }
+      /* .industries .perent {
+          grid-template-columns: repeat(1, 1fr);
+      } */
+
+    .industries .perent .child img {
+        width: 100%;
+    }
+}
+
+/* ========================= */
+.service {
+    margin: auto;
+    box-shadow: inset  10px 50px 20px 0px #5f5c5c14;
+}
+
+.service .row {
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    align-content: center;
+}
+
+.service .box {
+    text-align: center;
+    margin:1rem auto;
+}

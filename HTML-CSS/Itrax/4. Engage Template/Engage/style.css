@@ -1,0 +1,165 @@
+/* =============General Style============== */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+li {
+    list-style-type: none;
+}
+.clr {
+    clear: both;
+}
+/* =================Header========================= */
+nav.navbar {
+    width: 90%;
+    margin: auto;
+    padding-top: 10px;
+}
+
+nav.navbar div.nav-container {
+    position: fixed;
+    top: 0;
+    width: 90%;
+    background-color: #fff;
+
+}
+nav.navbar div.nav-container a img {
+    width: 120px;
+    /* ! I got this size from website itself */
+}
+
+nav.navbar div.nav-container ul {
+    text-align: right;
+    float: right;
+    font-size: 15px;
+    padding: 12px 0px;
+}
+
+nav.navbar div.nav-container ul li.inline {
+    display: inline;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    margin: 0px 13px;
+    font-weight: 500;
+
+}
+
+.active a {
+    color: crimson;
+    font-weight: 700;
+    border-bottom: 1px solid;
+}
+
+/* =================Header========================= */
+/* =================Toolbar========================= */
+section.content {
+    margin: auto;
+}
+
+section.content div.toolbar {
+    width: 84%;
+    margin: auto;
+    padding: 40px 0px;
+    /* ! This is be aligned with the whole page margin/padding.This is done by try/error */
+}
+
+section.content div.toolbar ul {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+
+
+
+}
+
+section.content div.toolbar ul li.filter {
+    display: inline-block;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+/* =================Toolbar========================= */
+/* =================Gallary========================= */
+
+section.content div.gallary.navbar {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+section.content div.gallary div.layout {
+    margin: auto;
+    padding: 10px 0px;
+    text-align: center;
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+}
+
+section.content div.gallary div.layout figure.item {
+    display: inline-block;
+    margin: 3px;
+    width: 30%;
+
+}
+
+section.content div.gallary div.layout figure.item img {
+    width: 100%;
+height: 300px;
+}
+
+section.content div.gallary div.layout figure.item figcaption.item-name {
+    text-align: center;
+}
+
+/* =================Gallary========================= */
+/* =================Footer========================= */
+footer div.footer-box {
+    width: 90%;
+    margin: auto;
+    padding: 20px 0px;
+    overflow: hidden;
+}
+
+footer div.footer-box div.footer-main div.copyrights {
+    float: left;
+}
+
+footer div.footer-box div.footer-main div.links {
+    float: right;
+    padding-top: 5px;
+}
+
+footer div.footer-box div.footer-main div.links a.socials {
+    margin: 1px 5px;
+    display: inline-block;
+        border-radius: 50%;
+        padding: 10px;
+
+}
+
+a.socials:hover {
+    background-color: wheat;
+}
+
+a.socials.testurl:hover {
+    background-color: aqua;
+}
+
+footer div.footer-box div.footer-main div.links a.socials img {
+    width: 20px;
+    height: 20px;
+}
+
+/* =================Footer========================= */

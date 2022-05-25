@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simple Website Layout</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <main>
+            <header>
+                <nav>
+                    <h1 class="header1">Logo</h1>
+                    <!-- <ul class="header1" >
+                    <li><h1>Logo</h1></li>
+                </ul> -->
+                </nav>
+            </header>
+            <section>
+                <div class="homesection"> Home Section </div>
+                <div class="aboutsection"> About Section </div>
+            </section>
+            <section>
+                <table border="#">
+                    <caption class="tablecaption">
+                        <h4>Table Workers Data</h4>
+                    </caption>
+                    <tr>
+                        <th class="th30">ID</th>
+                        <th class="restoftable">User</th>
+                        <th class="restoftable">Salary</th>
+                    </tr>
+                    <tbody>
+                        <tr>
+                            <td>2</td>
+                            <td>Mohammed</td>
+                            <td> 1400 LE</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Tarek</td>
+                            <td>1000 LE</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>Total</td>
+                            <td>__</td>
+                            <td>2400 LE</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+            <fieldset>
+                <legend>
+                    Fill Data
+                </legend>
+                <form action="post">
+                    <label for="mail">Email:</label>
+                    <br>
+                    <input type="email" name="em-in-name" id="mail" placeholder="ah.al@gmail.com" width="20px" required>
+                    <br>
+                    <label for="pass"> Password: </label>
+                    <br>
+                    <input type="password" id="pass">
+                    <br>
+                    <input class="sb" type="submit" name="Send" value="Send Data" id="send">
+                </form>
+            </fieldset>
+        </main>
+        <footer>
+        </footer>
+    </body>
+
+</html>

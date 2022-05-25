@@ -1,0 +1,12 @@
+{
+	"workbench.editor.enablePreview": true,
+	"editor.autoIndent": "none",
+	"editor.comments.ignoreEmptyLines": false,
+	"editor.comments.insertSpace": false,
+	"editor.detectIndentation": false,
+	"editor.emptySelectionClipboard": false,
+	"editor.glyphMargin": true,
+	"editor.guides.highlightActiveIndentation": false,
+	"editor.guides.indentation": false,
+	"better-comments.highlightPlainText": true
+}

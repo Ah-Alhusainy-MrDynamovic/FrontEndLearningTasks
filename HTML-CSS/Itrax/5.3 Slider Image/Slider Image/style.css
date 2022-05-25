@@ -1,0 +1,49 @@
+/* Ahmed Alhusainy */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: aliceblue;
+
+}
+body{
+    background-color: rgb(9, 9, 13);
+}
+h1{
+    text-align:center;
+    margin-bottom: 2rem;
+}
+.container {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    width: 500px;
+
+}
+.slider {
+    height: 500px;
+    width: 500px;
+    background-image: url("./img/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: slider 6s infinite linear;
+}
+
+@keyframes slider {
+
+    30%{ 
+    background-image: url("./img/2.jpg");
+
+      } 
+    60%{
+    background-image: url("./img/3.jpg");
+
+    }
+    100%{
+    background-image: url("./img/4.jpg");
+
+    }
+} 

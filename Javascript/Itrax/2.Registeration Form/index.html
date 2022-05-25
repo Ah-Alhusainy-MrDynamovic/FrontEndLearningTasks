@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1 : Registration Form With Validation</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+    <!--<script defer src="main2.js"></script>-->
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <section>
+            <div id="container" class="container">
+                <input type="radio" name="formOption" id="loginChecked">
+                <input type="radio" name="formOption" id="signupChecked" checked>
+
+                <!-- Login and Registration form input place-->
+                <div id="form-wrapper" class="form-container">
+                    <input id="first" type="text" maxlength="9" placeholder="First name">
+                    <input id="last" type="text" maxlength="10" placeholder="Last name">
+                    <input id="username" type="text" size="10" placeholder="Username">
+                    <input id="age" type="number" min="15" max="55" placeholder="Age">
+                    <input id="email" type="email" placeholder="Email" required>
+                    <input id="pass" type="password" placeholder="Password">
+                </div>
+                <div id="login-wrapper" class="log-container">
+                    <input id="username-log" type="text" size="10" placeholder="Username">
+                    <input id="email-log" type="email" placeholder="Email" required>
+                    <input id="pass-log" type="password" placeholder="Password">
+                </div>
+                <div class="usersWrapper">
+                    <table class="user-table" id="tableOfUsers">
+                        <thead>
+                            <tr>
+                                <th>First name</th>
+                                <th>Last name</th>
+                                <th>Username</th>
+                                <th>Age</th>
+                                <th>Email</th>
+                                <th>Password</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--Sign Up area-->
+                <div id="signup" class=" signup ">
+                    <label id="signupLabel" for="signupChecked " class="btn btn-primary pos1 ">
+                            Sign Up
+                        </label>
+                </div>
+
+                <!--Login area -->
+                <div id="logIn" class="login ">
+                    <label id="loginLabel" for="loginChecked " class="btn btn-secondary pos2 ">
+                            Login
+                        </label>
+                </div>
+
+            </div>
+
+
+
+
+        </section>
+
+
+
+
+    </main>
+    <footer></footer>
+</body>
+
+</html>
+
+</html>
