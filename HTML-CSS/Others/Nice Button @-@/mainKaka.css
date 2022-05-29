@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111;
+}
+
+.parent {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding-top: 5rem;
+}
+
+button {
+    background-color: rgb(100, 61, 136, 0.5);
+    border-radius: 20px;
+    box-shadow: 0 0 12px 4px white, 0 0 10px #fdfdfd inset;
+    border: 3px solid white;
+    padding: 1rem 2.5rem;
+    color: rgb(232 224 239);
+    font-size: 1rem;
+    text-shadow: 0 0 .5em rgb(201, 129, 201);
+    font-weight: 700;
+    position: relative;
+    transition: all 0.3s;
+}
+
+button:hover {
+    border: 5px solid rgb(209, 165, 250);
+    color: rgb(100, 61, 136);
+    background-color: rgb(217, 176, 255);
+    box-shadow: 0px 0px 60px 10px rgb(217, 176, 255);
+}
+
+button::after {
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(217, 176, 255);
+    filter: blur(2em);
+    opacity: .4;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+}
+
+button:active {
+    border: 4px solid rgb(209, 165, 250);
+    color: rgb(100, 61, 136);
+    background-color: rgb(201, 164, 235);
+    box-shadow: 0px 0px 60px 20px rgb(245, 244, 245);
+}
