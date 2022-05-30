@@ -12,6 +12,19 @@ function getUserNumberInput() {
 }
 // log function that save all the history of trans
 
+// ! Action to dynamcially return object of info without duplicating as it appears now at line 37 , ..ect 
+const writeToReturnObjectInfo = (operatorIndentifier,prevResult,operandNumber,newResult) => {
+	const logsObject= {
+		operation: operatorIndentifier,
+		prevResult: prevResult,
+		operandNumber: operandNumber,
+		afterResult:newResult
+	}
+	logEnteries.push(logsObject)
+	console.log('logs: ', logEnteries);
+	console.log(typeof(logEnteries));	
+}
+
 // Use this when you uncommit line 32,50,70,88  to push array instead of abject
 
 // let logHistory= function logs(x,y,z) {
@@ -32,15 +45,7 @@ function add() {
     currentResult += enteredNumberFromUser
     logic('+', initResult, enteredNumberFromUser)
 	// logHistory(initResult,enteredNumberFromUser,currentResult)
-	const logsObject= {
-		operation: "ADD",
-		prevResult: initResult,
-		operandNumber: enteredNumberFromUser,
-		afterResult:currentResult
-	}
-	logEnteries.push(logsObject)
-	console.log('logs: ', logEnteries);
-	console.log(typeof(logEnteries));	
+	writeToReturnObjectInfo("Add",initResult,enteredNumberFromUser,currentResult)
 
 }
 
@@ -50,15 +55,8 @@ function substra() {
     currentResult -= enteredNumberFromUser
     logic('-', initResult, enteredNumberFromUser)
 	// logHistory(initResult,enteredNumberFromUser,currentResult)
-	const logsObject= {
-		operation: "Subtract",
-		prevResult: initResult,
-		operandNumber: enteredNumberFromUser,
-		afterResult:currentResult
-	}
-	logEnteries.push(logsObject)
-	console.log('logs: ', logEnteries);
-	console.log(typeof(logEnteries));	
+	writeToReturnObjectInfo("Substraction",initResult,enteredNumberFromUser,currentResult)
+
 
 }
 	
@@ -70,15 +68,8 @@ function multi() {
     currentResult *= enteredNumberFromUser
     logic('*', initResult, enteredNumberFromUser)
 	// logHistory(initResult,enteredNumberFromUser,currentResult)
-	const logsObject= {
-		operation: "Multi",
-		prevResult: initResult,
-		operandNumber: enteredNumberFromUser,
-		afterResult:currentResult
-	}
-	logEnteries.push(logsObject)
-	console.log('logs: ', logEnteries);
-	console.log(typeof(logEnteries));	
+	writeToReturnObjectInfo("MultiPlying",initResult,enteredNumberFromUser,currentResult)
+	
 	
 }
 
@@ -88,15 +79,8 @@ function divide() {
     currentResult /= enteredNumberFromUser
     logic('/', initResult, enteredNumberFromUser)
 	// logHistory(initResult,enteredNumberFromUser,currentResult)
-	const logsObject= {
-		operation: "Division",
-		prevResult: initResult,
-		operandNumber: enteredNumberFromUser,
-		afterResult:currentResult
-	}
-	logEnteries.push(logsObject)
-	console.log('logs: ', logEnteries);
-	console.log(typeof(logEnteries));	
+	writeToReturnObjectInfo("Devide",initResult,enteredNumberFromUser,currentResult)
+
 	
 
 }
