@@ -22,7 +22,6 @@ const writeToReturnObjectInfo = (operatorIndentifier,prevResult,operandNumber,ne
 	}
 	logEnteries.push(logsObject)
 	console.log('logs: ', logEnteries);
-	console.log(typeof(logEnteries));	
 }
 
 // Use this when you uncommit line 32,50,70,88  to push array instead of abject
