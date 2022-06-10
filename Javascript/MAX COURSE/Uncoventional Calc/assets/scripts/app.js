@@ -6,9 +6,14 @@ let logEnteries=[]
 // let currentResult = 0;
 
 // Functions
-
 function getUserNumberInput() {
-    return parseInt(userInput.value)
+	if (userInput.value) {
+		alert(`value is  not empty, Type is ${typeof parseInt(userInput.value)}  and value is ${userInput.value}`)
+		return parseInt(userInput.value);
+	}
+	else { 
+		alert(`value is empty ${typeof userInput.value}`)
+	}
 }
 // log function that save all the history of trans
 
@@ -22,7 +27,6 @@ const writeToReturnObjectInfo = (operatorIndentifier,prevResult,operandNumber,ne
 	}
 	logEnteries.push(logsObject)
 	console.log('logs: ', logEnteries);
-	console.log(typeof(logEnteries));	
 }
 
 // Use this when you uncommit line 32,50,70,88  to push array instead of abject
@@ -38,54 +42,44 @@ function logic(operator, first, reuslt) {
     outputResult(currentResult, calcDesc)
 
 }
-// Main Functions 
-function add() {
-    const enteredNumberFromUser = getUserNumberInput()
-    const initResult = currentResult
-    currentResult += enteredNumberFromUser
-    logic('+', initResult, enteredNumberFromUser)
-	// logHistory(initResult,enteredNumberFromUser,currentResult)
-	writeToReturnObjectInfo("Add",initResult,enteredNumberFromUser,currentResult)
 
-}
-
-function substra() {
-    const enteredNumberFromUser = getUserNumberInput()
-    const initResult = currentResult
+// Let's replace those two functions with more clean conditional code 
+function calculateResult(math0perator) {
+	const enteredNumberFromUser = getUserNumberInput()
+	const initResult = currentResult
+	let opp;
+	if (math0perator === "ADD") {
+		opp= '+'
+		currentResult += enteredNumberFromUser
+	} else if (math0perator==="SUB") {
+		opp= "-"
     currentResult -= enteredNumberFromUser
-    logic('-', initResult, enteredNumberFromUser)
-	// logHistory(initResult,enteredNumberFromUser,currentResult)
-	writeToReturnObjectInfo("Substraction",initResult,enteredNumberFromUser,currentResult)
-
-
-}
-	
-
-
-function multi() {
-    const enteredNumberFromUser = getUserNumberInput()
-    const initResult = currentResult
-    currentResult *= enteredNumberFromUser
-    logic('*', initResult, enteredNumberFromUser)
-	// logHistory(initResult,enteredNumberFromUser,currentResult)
-	writeToReturnObjectInfo("MultiPlying",initResult,enteredNumberFromUser,currentResult)
-	
-	
-}
-
-function divide() {
-    const enteredNumberFromUser = getUserNumberInput()
-    const initResult = currentResult
+	} else if (math0perator==="Multi") {
+		opp= '*'
+    currentResult *= enteredNumberFromUser	
+	} else if (math0perator==="DIVIDE") {
+			if (enteredNumberFromUser ===0 ) { alert(`value is  not empty but value is ${userInput.value} so we can't divide by 0`) }
+		opp= '/'
     currentResult /= enteredNumberFromUser
-    logic('/', initResult, enteredNumberFromUser)
-	// logHistory(initResult,enteredNumberFromUser,currentResult)
-	writeToReturnObjectInfo("Devide",initResult,enteredNumberFromUser,currentResult)
-
-	
-
+	} else {
+		window.alert (`PLease Input Valid Operator ${math0perator} is not valid`)
+	}
+		logic(opp, initResult, enteredNumberFromUser)
+// logHistory(initResult,enteredNumberFromUser,currentResult)
+		writeToReturnObjectInfo(math0perator,initResult,enteredNumberFromUser,currentResult)
 }
-
-
+function add() {
+calculateResult("ADD")
+}
+function substra() {
+calculateResult("SUB")
+}
+function multi() {
+	calculateResult("Multi")
+}
+function divide() {
+	calculateResult("DIVIDE")
+}
 
 // Events 
 addBtn.addEventListener("click", add)
